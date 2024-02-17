@@ -1,4 +1,5 @@
 import Crousel from "../Components/Crousel"
+import DiscountOfferPage from "../Components/DiscountOfferPage"
 import FeatureProduct from "../Components/FeatureProduct"
 import ProductCollection from "../Components/ProductCollection"
 
@@ -9,6 +10,7 @@ const Home = () => {
         <div className='carousel-container'>
         <Crousel />
         <ProductCollection/>
+        <DiscountOfferPage/>
         <FeatureProduct/>
       </div>
     </div>

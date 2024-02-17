@@ -19,3 +19,10 @@
 .white-color-cast {
   filter: hue-rotate(90deg) brightness(110%) contrast(90%);
 }
+.wallImage{
+  background-image: url("../src/assets/discountWall1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid grey;
+  padding: 5%;
+}
