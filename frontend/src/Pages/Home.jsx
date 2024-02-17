@@ -1,4 +1,5 @@
 import Crousel from "../Components/Crousel"
+import FeatureProduct from "../Components/FeatureProduct"
 import ProductCollection from "../Components/ProductCollection"
 
 
@@ -8,6 +9,7 @@ const Home = () => {
         <div className='carousel-container'>
         <Crousel />
         <ProductCollection/>
+        <FeatureProduct/>
       </div>
     </div>
   )
