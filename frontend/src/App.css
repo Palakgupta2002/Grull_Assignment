@@ -24,5 +24,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid grey;
-  padding: 5%;
+  padding: 2%;
+}
+.otherPages{
+  margin-top: 40%;
+}
+@media screen and (max-width: 480px){
+  .otherPages{
+    margin-top: 80%;
+  }
+
 }

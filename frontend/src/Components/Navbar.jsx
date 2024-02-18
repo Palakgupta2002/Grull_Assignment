@@ -11,20 +11,20 @@ const NavBar = () => {
             </Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse className='p-5'>
-                <Navbar.Link href="#" active  >
-                    <span className='text-white text-2xl'>Home</span>
+                <Navbar.Link href="/" active  >
+                    <span className='text-white text-xl'>Home</span>
+                </Navbar.Link>
+                <Navbar.Link href="/Shop">
+                    <span className='text-white text-xl'>Shop</span>
                 </Navbar.Link>
                 <Navbar.Link href="#">
-                    <span className='text-white text-2xl'>Home</span>
+                    <span className='text-white text-xl'>About us</span>
                 </Navbar.Link>
                 <Navbar.Link href="#">
-                    <span className='text-white text-2xl'>Home</span>
+                    <span className='text-white text-xl'>Contact Us</span>
                 </Navbar.Link>
                 <Navbar.Link href="#">
-                    <span className='text-white text-2xl'>Home</span>
-                </Navbar.Link>
-                <Navbar.Link href="#">
-                    <span className='text-white text-2xl'>Home</span>
+                    <span className='text-white text-xl'>Cart</span>
                 </Navbar.Link>
             </Navbar.Collapse>
         </Navbar>
