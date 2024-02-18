@@ -5,7 +5,7 @@ const ShopCard = (product) => {
     console.log(product.product.image,"hello")
   return (
     <div>
-        <div className="flex justify-center w-60 h-full border-2 border-solid border-red-800">
+        <div className="flex justify-center w-60 h-full ">
             <img width={"150px"} src={product.product.image} alt="" />
         </div>
         <div>

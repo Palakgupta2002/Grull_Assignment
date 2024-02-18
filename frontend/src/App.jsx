@@ -7,6 +7,7 @@ import Home from './Pages/Home'
 import Shop from './Pages/Shop'
 import Crousel from './Components/Crousel'
 import FooterComponent from './Components/FooterComponent'
+import LoginPage from './Pages/LoginPage'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/Shop' element={<Shop/>}/>
+      <Route path='/Login' element={<LoginPage/>} />
     </Routes>
     </BrowserRouter>
     <FooterComponent/>

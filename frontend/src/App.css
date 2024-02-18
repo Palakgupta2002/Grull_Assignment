@@ -35,3 +35,9 @@
   }
 
 }
+.shadow-md{
+  height: fit-content;
+}
+.max-h-\[90vh\]{
+max-height: fit-content !important;
+}
