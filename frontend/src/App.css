@@ -19,6 +19,14 @@
 .white-color-cast {
   filter: hue-rotate(90deg) brightness(110%) contrast(90%);
 }
+.card{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.back{
+  background-color: #00f2e2;
+  border:2px solid #00f2e2
+
+}
 .wallImage{
   background-image: url("../src/assets/discountWall1.jpg");
   background-repeat: no-repeat;

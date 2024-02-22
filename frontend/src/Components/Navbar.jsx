@@ -1,7 +1,8 @@
-import {  Navbar } from 'flowbite-react';
+import { Button, Navbar } from 'flowbite-react';
 import { useState, useEffect } from 'react';
 import LoginPage from '../Pages/LoginPage';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import "../App.css"
 
 const NavBar = () => {
     const [openModal, setOpenModal] = useState(false); // Start with modal closed
@@ -12,25 +13,17 @@ const NavBar = () => {
     // }, []);
 
     return (
-        <div>
-            <Navbar fluid rounded className='bg-transparent'>
+        <div >
+            <Navbar fluid  className='bg-transparent'  >
                 <Navbar.Brand href="https://flowbite-react.com">
-                    <img className='absolute p-3' width={"200px"} alt="dev shopping" />
+                   <div className='text-white text-2xl italic'>Shopping Buddy</div>
                 </Navbar.Brand>
                 <Navbar.Toggle />
-                <Navbar.Collapse className='p-5 text-white'>
-                    <div>
-                        <Link to="/">Home</Link>
-                    </div>
-                    <div>
-                        <Link to="/Shop">Shop</Link>
-                    </div>
-                    <div>
-                        <Link to='/Cart'>Cart</Link>
-                    </div>
-                    <div>
-                    <span onClick={() => setOpenModal(true)}>Login</span>
-                    </div>
+                <Navbar.Collapse className='p-5 text-2xl'>
+                    <Button className='mt-2 rounded-full' outline><Link to="/">Home</Link></Button>
+                    <Button className='mt-2 rounded-full' outline> <Link to='/Shop'>Shop</Link></Button>
+                    <Button className='mt-2 rounded-full' outline> <Link to='/Cart'>Cart</Link></Button>
+                    <Button className='mt-2 rounded-full' outline><span onClick={() => setOpenModal(true)}>Login</span></Button>
                 </Navbar.Collapse>
             </Navbar>
             {/* Render the LoginPage component conditionally based on the openModal state */}

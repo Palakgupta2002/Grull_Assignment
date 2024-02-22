@@ -11,16 +11,16 @@ const ShopCard = (product) => {
 
     }
   return (
-    <div>
-        <div className="flex justify-center w-60 h-full ">
+    <div className="mt-10 mb-10">
+        <div className="flex justify-center w-60 h-full card p-10">
             <img width={"150px"} src={product.product.image} alt="" />
+            <div className="text-xl">${product.product.price}</div>
         </div>
         <div>
-
         </div>
-        <div className="flex justify-between">
-            <div><Button onClick={()=>handleClick(product.product)}>Add to cart</Button></div>
-            <div><Button>Like</Button></div>
+        <div className="flex justify-between card p-5 bg-blue-200">
+            <div className="rounded-3xl"><Button  outline  onClick={()=>handleClick(product.product)}>Add to cart</Button></div>
+            <div><Button outline >Like</Button></div>
         </div>
     </div>
   )

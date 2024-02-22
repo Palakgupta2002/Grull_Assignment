@@ -13,10 +13,8 @@ const cartSlice = createSlice({
             state.cart = [];
         },
         deleteCartItem: (state, action) => {
-            const indexToDelete = state.cart.findIndex(item => item.id === action.payload.id);
-            if (indexToDelete !== -1) {
-                state.cart.splice(indexToDelete, 1);
-            }
+            const idToDelete = action.payload;
+            state.cart = state.cart.filter(item => item.id !== idToDelete);
         }
     }
 });

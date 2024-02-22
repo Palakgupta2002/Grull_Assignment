@@ -10,6 +10,8 @@ const FeatureProduct = () => {
         <FeatureCard/>
         <FeatureCard/>
         <FeatureCard/>
+        <FeatureCard/>
+        <FeatureCard/>
     </div>
     </div>
   )

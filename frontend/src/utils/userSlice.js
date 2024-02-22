@@ -8,7 +8,7 @@ const userSlice = createSlice({
     },
     reducers: {
         isAuth: (state,action) => {
-            state.userAuth = !state.userAuth ; 
+            state.userAuth = true ; 
             state.formData=action.payload
         }
     }
